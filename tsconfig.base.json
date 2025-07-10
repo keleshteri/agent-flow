@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@agent-flow/agents": ["libs/agents/src/index.ts"],
+      "@agent-flow/agents/*": ["libs/agents/src/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
