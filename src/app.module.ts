@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
+import { ConfigModule } from './core/config';
 
 /**
  * Application module
  */
 @Module({
-  imports: [],
+  imports: [ConfigModule],
   controllers: [],
   providers: [],
 })
