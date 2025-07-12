@@ -29,11 +29,11 @@ export class AuthConfig {
   readonly maxLoginAttempts!: number;
 
   @IsNumber()
-  @Transform(({ value }) => parseInt(value, 10))
+  @Transform(({ value }) => parseInt(value as string, 10))
   readonly lockoutDuration!: number;
 
   @IsNumber()
-  @Transform(({ value }) => parseInt(value, 10))
+  @Transform(({ value }) => parseInt(value as string, 10))
   readonly sessionTimeout!: number;
 
   @IsString()
